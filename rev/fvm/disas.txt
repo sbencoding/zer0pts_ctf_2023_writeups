@@ -1,0 +1,509 @@
+0 (0x23): push PI
+1 (0x38): ST[7] = ST[0]
+	STP--
+2 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+3 (0x24): push log2(10)
+4 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+5 (0x54): ST[0] = round(ST[0])
+6 (0x24): push log2(10)
+7 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+8 (0x54): ST[0] = round(ST[0])
+9 (0x73): put(round(ST[0]))
+	STP++
+10 (0x24): push log2(10)
+11 (0x38): ST[7] = ST[0]
+	STP--
+12 (0x38): ST[7] = ST[0]
+	STP--
+13 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+14 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+15 (0x27): push logE(2)
+16 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+17 (0x24): push log2(10)
+18 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+19 (0x54): ST[0] = round(ST[0])
+20 (0x73): put(round(ST[0]))
+	STP++
+21 (0x24): push log2(10)
+22 (0x38): ST[7] = ST[0]
+	STP--
+23 (0x38): ST[7] = ST[0]
+	STP--
+24 (0x23): push PI
+25 (0x51): ST[0] = sqrt(ST[0])
+26 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+27 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+28 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+29 (0x54): ST[0] = round(ST[0])
+30 (0x73): put(round(ST[0]))
+	STP++
+31 (0x23): push PI
+32 (0x24): push log2(10)
+33 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+34 (0x24): push log2(10)
+35 (0x38): ST[7] = ST[0]
+	STP--
+36 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+37 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+38 (0x54): ST[0] = round(ST[0])
+39 (0x73): put(round(ST[0]))
+	STP++
+40 (0x23): push PI
+41 (0x38): ST[7] = ST[0]
+	STP--
+42 (0x38): ST[7] = ST[0]
+	STP--
+43 (0x51): ST[0] = sqrt(ST[0])
+44 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+45 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+46 (0x24): push log2(10)
+47 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+48 (0x54): ST[0] = round(ST[0])
+49 (0x73): put(round(ST[0]))
+	STP++
+50 (0x23): push PI
+51 (0x38): ST[7] = ST[0]
+	STP--
+52 (0x38): ST[7] = ST[0]
+	STP--
+53 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+54 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+55 (0x54): ST[0] = round(ST[0])
+56 (0x22): push 1
+57 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+58 (0x73): put(round(ST[0]))
+	STP++
+59 (0x21): push 0
+60 (0x62): push RIP     # read 2 user bytes and calculate CALC1
+	jmp 467
+63 (0x62): push RIP     # read 2 user bytes and calculate CALC2
+	jmp 500
+66 (0x62): push RIP
+	jmp 457
+69 (0x39): push const 053f11f4ff2957810e40      # 0x400e815729fff4113f05 +33111.1640617887597
+80 (0x65): jmp 86 if ST[0] != ST[1]; STP++
+83 (0x32): swap ST[2], ST[0]
+84 (0x53): ST[0] = cos(ST[0])
+85 (0x32): swap ST[2], ST[0]
+86 (0x3a): pop
+87 (0x39): push const 5e57f3b4a38c7fba0740      # 0x4007ba7f8ca3b4f3575e +372.9964794763133637
+98 (0x65): jmp 104 if ST[0] != ST[1]; STP++
+101 (0x31): swap ST[1], ST[0]
+102 (0x53): ST[0] = cos(ST[0])
+103 (0x31): swap ST[1], ST[0]
+104 (0x3a): pop
+105 (0x62): push RIP
+	jmp 467
+108 (0x62): push RIP
+	jmp 500
+111 (0x62): push RIP
+	jmp 457
+114 (0x39): push const b77380e1b07287f20340
+125 (0x65): jmp 131 if ST[0] != ST[1]; STP++
+128 (0x32): swap ST[2], ST[0]
+129 (0x53): ST[0] = cos(ST[0])
+130 (0x32): swap ST[2], ST[0]
+131 (0x3a): pop
+132 (0x39): push const 3f68a3e4049a3b8f0740
+143 (0x65): jmp 149 if ST[0] != ST[1]; STP++
+146 (0x31): swap ST[1], ST[0]
+147 (0x53): ST[0] = cos(ST[0])
+148 (0x31): swap ST[1], ST[0]
+149 (0x3a): pop
+150 (0x62): push RIP
+	jmp 467
+153 (0x62): push RIP
+	jmp 500
+156 (0x62): push RIP
+	jmp 457
+159 (0x39): push const 5427b5b695525dcd0b40
+170 (0x65): jmp 176 if ST[0] != ST[1]; STP++
+173 (0x32): swap ST[2], ST[0]
+174 (0x53): ST[0] = cos(ST[0])
+175 (0x32): swap ST[2], ST[0]
+176 (0x3a): pop
+177 (0x39): push const 28919a4aa27137910740
+188 (0x65): jmp 194 if ST[0] != ST[1]; STP++
+191 (0x31): swap ST[1], ST[0]
+192 (0x53): ST[0] = cos(ST[0])
+193 (0x31): swap ST[1], ST[0]
+194 (0x3a): pop
+195 (0x62): push RIP
+	jmp 467
+198 (0x62): push RIP
+	jmp 500
+201 (0x62): push RIP
+	jmp 457
+204 (0x39): push const a3861405418c74e50b40
+215 (0x65): jmp 221 if ST[0] != ST[1]; STP++
+218 (0x32): swap ST[2], ST[0]
+219 (0x53): ST[0] = cos(ST[0])
+220 (0x32): swap ST[2], ST[0]
+221 (0x3a): pop
+222 (0x39): push const bc61edf2e96ec1ab0640
+233 (0x65): jmp 239 if ST[0] != ST[1]; STP++
+236 (0x31): swap ST[1], ST[0]
+237 (0x53): ST[0] = cos(ST[0])
+238 (0x31): swap ST[1], ST[0]
+239 (0x3a): pop
+240 (0x62): push RIP
+	jmp 467
+243 (0x62): push RIP
+	jmp 500
+246 (0x62): push RIP
+	jmp 457
+249 (0x39): push const 88923ae0693f54920640
+260 (0x65): jmp 266 if ST[0] != ST[1]; STP++
+263 (0x32): swap ST[2], ST[0]
+264 (0x53): ST[0] = cos(ST[0])
+265 (0x32): swap ST[2], ST[0]
+266 (0x3a): pop
+267 (0x39): push const 0fd1bee339a196c50540
+278 (0x65): jmp 284 if ST[0] != ST[1]; STP++
+281 (0x31): swap ST[1], ST[0]
+282 (0x53): ST[0] = cos(ST[0])
+283 (0x31): swap ST[1], ST[0]
+284 (0x3a): pop
+285 (0x62): push RIP
+	jmp 467
+288 (0x62): push RIP
+	jmp 500
+291 (0x62): push RIP
+	jmp 457
+294 (0x39): push const 83ea7b97e54cd3ea0640
+305 (0x65): jmp 311 if ST[0] != ST[1]; STP++
+308 (0x32): swap ST[2], ST[0]
+309 (0x53): ST[0] = cos(ST[0])
+310 (0x32): swap ST[2], ST[0]
+311 (0x3a): pop
+312 (0x39): push const 87efb0d15cfe86ad0440
+323 (0x65): jmp 329 if ST[0] != ST[1]; STP++
+326 (0x31): swap ST[1], ST[0]
+327 (0x53): ST[0] = cos(ST[0])
+328 (0x31): swap ST[1], ST[0]
+329 (0x3a): pop
+330 (0x62): push RIP
+	jmp 467
+333 (0x62): push RIP
+	jmp 500
+336 (0x62): push RIP
+	jmp 457
+339 (0x39): push const 19426cd4caf6f2d90940
+350 (0x65): jmp 356 if ST[0] != ST[1]; STP++
+353 (0x32): swap ST[2], ST[0]
+354 (0x53): ST[0] = cos(ST[0])
+355 (0x32): swap ST[2], ST[0]
+356 (0x3a): pop
+357 (0x39): push const efffda1513eaaedb0640
+368 (0x65): jmp 374 if ST[0] != ST[1]; STP++
+371 (0x31): swap ST[1], ST[0]
+372 (0x53): ST[0] = cos(ST[0])
+373 (0x31): swap ST[1], ST[0]
+374 (0x3a): pop
+375 (0x62): push RIP
+	jmp 467
+378 (0x62): push RIP
+	jmp 500
+381 (0x62): push RIP
+	jmp 457
+384 (0x39): push const fe1397dfcd127ef00a40
+395 (0x65): jmp 401 if ST[0] != ST[1]; STP++
+398 (0x32): swap ST[2], ST[0]
+399 (0x53): ST[0] = cos(ST[0])
+400 (0x32): swap ST[2], ST[0]
+401 (0x3a): pop
+402 (0x39): push const 1cafcf1f964541a50640
+413 (0x65): jmp 419 if ST[0] != ST[1]; STP++
+416 (0x31): swap ST[1], ST[0]
+417 (0x53): ST[0] = cos(ST[0])
+418 (0x31): swap ST[1], ST[0]
+419 (0x3a): pop
+420 (0x72): push get()
+421 (0x23): push PI
+422 (0x38): ST[7] = ST[0]
+	STP--
+423 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+424 (0x25): push log2(e)
+425 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+426 (0x24): push log2(10)
+427 (0x38): ST[7] = ST[0]
+	STP--
+428 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+429 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+430 (0x54): ST[0] = round(ST[0])
+431 (0x64): jmp 439 if ST[0] == ST[1]; STP++
+434 (0x3a): pop
+435 (0x3a): pop
+436 (0x63): jmp 564
+439 (0x3a): pop
+440 (0x39): push const 5a883414a0c305bdfe3f
+451 (0x64): jmp 596 if ST[0] == ST[1]; STP++
+454 (0x63): jmp 564
+457 (0x32): swap ST[2], ST[0]
+458 (0x38): ST[7] = ST[0]
+	STP--
+459 (0x32): swap ST[2], ST[0]
+460 (0x38): ST[7] = ST[0]
+	STP--
+461 (0x32): swap ST[2], ST[0]
+462 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+463 (0x32): swap ST[2], ST[0]
+464 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+465 (0x32): swap ST[2], ST[0]
+466 (0x61): jmp ST[0]; STP++
+## Read 2 bytes from user input and validate that they are within the printable range
+467 (0x72): push get()
+468 (0x62): push RIP
+	jmp 537
+471 (0x72): push get()
+472 (0x62): push RIP
+	jmp 537
+475 (0x22): push 1
+476 (0x22): push 1
+477 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+478 (0x23): push PI
+479 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+480 (0x43): ST[1] = ST[0] * ST[1]   ## = 2 * pi * userbyte
+	STP++
+481 (0x24): push log2(10)
+482 (0x38): ST[7] = ST[0]
+	STP--
+483 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+484 (0x54): ST[0] = round(ST[0])    ## == 7
+485 (0x24): push log2(10)
+486 (0x38): ST[7] = ST[0]
+	STP--
+487 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+488 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+489 (0x54): ST[0] = round(ST[0])    ## == 77
+490 (0x24): push log2(10)
+491 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+492 (0x54): ST[0] = round(ST[0])    ## == 256
+493 (0x44): ST[1] = ST[0] / ST[1]
+	STP++
+494 (0x38): ST[7] = ST[0]
+	STP--
+495 (0x52): ST[0] = sin(ST[0])
+496 (0x42): ST[1] = ST[0] - ST[1]
+	STP++
+497 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+498 (0x31): swap ST[1], ST[0]
+499 (0x61): jmp ST[0]; STP++
+## Read 2 bytes from user and validate range
+500 (0x72): push get()
+501 (0x62): push RIP
+	jmp 537
+504 (0x72): push get()
+505 (0x62): push RIP
+	jmp 537
+508 (0x22): push 1
+509 (0x22): push 1
+510 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+511 (0x23): push PI
+512 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+513 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+514 (0x24): push log2(10)
+515 (0x38): ST[7] = ST[0]
+	STP--
+516 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+517 (0x54): ST[0] = round(ST[0])    ## == 7
+518 (0x24): push log2(10)
+519 (0x38): ST[7] = ST[0]
+	STP--
+520 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+521 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+522 (0x54): ST[0] = round(ST[0])    ## == 77
+523 (0x24): push log2(10)
+524 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+525 (0x54): ST[0] = round(ST[0])    ## == 256
+526 (0x44): ST[1] = ST[0] / ST[1]
+	STP++
+527 (0x38): ST[7] = ST[0]
+	STP--
+528 (0x53): ST[0] = cos(ST[0])
+529 (0x22): push 1
+530 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+531 (0x31): swap ST[1], ST[0]
+532 (0x52): ST[0] = sin(ST[0])
+533 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+534 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+535 (0x31): swap ST[1], ST[0]
+536 (0x61): jmp ST[0]; STP++
+537 (0x31): swap ST[1], ST[0]
+538 (0x23): push PI
+539 (0x38): ST[7] = ST[0]
+	STP--
+540 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+541 (0x23): push PI
+542 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+543 (0x54): ST[0] = round(ST[0])
+544 (0x22): push 1
+545 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+546 (0x67): jmp 564 if ST[0] > ST[1]; STP++     ## st[0] = 32; st[1] = user byte
+549 (0x24): push log2(10)
+550 (0x38): ST[7] = ST[0]
+	STP--
+551 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+552 (0x24): push log2(10)
+553 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+554 (0x25): push log2(e)
+555 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+556 (0x24): push log2(10)
+557 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+558 (0x54): ST[0] = round(ST[0])
+559 (0x68): jmp 564 if ST[0] <= ST[1]; STP++    ## st[0] = 127; st[1] = user byte
+562 (0x31): swap ST[1], ST[0]
+563 (0x61): jmp ST[0]; STP++
+564 (0x23): push PI                     ## death
+565 (0x25): push log2(e)
+566 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+567 (0x24): push log2(10)
+568 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+569 (0x23): push PI
+570 (0x38): ST[7] = ST[0]
+	STP--
+571 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+572 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+573 (0x54): ST[0] = round(ST[0])
+574 (0x73): put(round(ST[0]))
+	STP++
+575 (0x23): push PI
+576 (0x24): push log2(10)
+577 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+578 (0x24): push log2(10)
+579 (0x38): ST[7] = ST[0]
+	STP--
+580 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+581 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+582 (0x54): ST[0] = round(ST[0])
+583 (0x73): put(round(ST[0]))
+	STP++
+584 (0x22): push 1
+585 (0x23): push PI
+586 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+587 (0x24): push log2(10)
+588 (0x38): ST[7] = ST[0]
+	STP--
+589 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+590 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+591 (0x54): ST[0] = round(ST[0])
+592 (0x73): put(round(ST[0]))
+	STP++
+593 (0x63): jmp 629
+596 (0x23): push PI     ## win
+597 (0x22): push 1
+598 (0x45): ST[0] = -ST[0]
+599 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+600 (0x24): push log2(10)
+601 (0x38): ST[7] = ST[0]
+	STP--
+602 (0x38): ST[7] = ST[0]
+	STP--
+603 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+604 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+605 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+606 (0x54): ST[0] = round(ST[0])
+607 (0x73): put(round(ST[0]))
+	STP++
+608 (0x24): push log2(10)
+609 (0x38): ST[7] = ST[0]
+	STP--
+610 (0x26): push log10(2)
+611 (0x23): push PI
+612 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+613 (0x24): push log2(10)
+614 (0x41): ST[1] = ST[0] + ST[1]
+	STP++
+615 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+616 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+617 (0x54): ST[0] = round(ST[0])
+618 (0x73): put(round(ST[0]))
+	STP++
+619 (0x23): push PI
+620 (0x38): ST[7] = ST[0]
+	STP--
+621 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+622 (0x24): push log2(10)
+623 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+624 (0x54): ST[0] = round(ST[0])
+625 (0x73): put(round(ST[0]))
+	STP++
+626 (0x63): jmp 629
+629 (0x23): push PI
+630 (0x38): ST[7] = ST[0]
+	STP--
+631 (0x43): ST[1] = ST[0] * ST[1]
+	STP++
+632 (0x54): ST[0] = round(ST[0])
+633 (0x73): put(round(ST[0]))
+	STP++
+634 (0x71): exit
+635 (0x0): idk --> 0x0
